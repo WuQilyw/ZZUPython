@@ -1,0 +1,19 @@
+#进制转换
+num = int(input("请输入一个数字："))
+#二进制
+bi = bin(num)[2:]
+#八进制
+oc = oct(num)[2:]
+#十六进制
+he = hex(num)[2:]
+
+print(num,"的二进制表示为："+bi)
+print(num,"的八进制表示为："+oc)
+print(num,"的十六进制表示为："+he)
+-------------------------------------
+#计算各位和
+num = input("请输入一个数字:")
+total = 0
+for char in num:
+    total += int(char)
+print(num+"的各位数字之和是",total)
